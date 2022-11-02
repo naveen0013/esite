@@ -56,7 +56,7 @@ function Whole() {
 
   setProducts(hereProducts);
   }
-  useEffect(()=>{  getData() },[])
+  useEffect(()=>{  setProducts(hereProducts)},[])
 
   const settingProductsAdmin=(id)=>{
       setProducts(Products.filter(pr=> pr.id!==id))
