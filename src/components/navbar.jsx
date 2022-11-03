@@ -47,7 +47,7 @@ function NavBar(data) {
           style={{ maxHeight: '100px' }}
           navbarScroll
           >
-          <Nav.Link onClick={()=>navigate('/')}>Home</Nav.Link>
+          <Nav.Link onClick={()=>navigate('/')} id='homee'>Home</Nav.Link>
           <Nav.Link onClick={()=>navigate('/cart')}>Cart {data.data.activeUser && data.data.cartProducts.length >0 && <Badge pill bg="success">{data.data.cartProducts.length}</Badge>}
             </Nav.Link>
           <NavDropdown title="Category" id="navbarScrollingDropdown">

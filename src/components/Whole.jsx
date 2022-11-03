@@ -56,7 +56,7 @@ function Whole() {
 
   setProducts(hereProducts);
   }
-  useEffect(()=>{  setProducts(hereProducts)},[])
+  useEffect(()=>{  setProducts(hereProducts);},[])
 
   const settingProductsAdmin=(id)=>{
       setProducts(Products.filter(pr=> pr.id!==id))
@@ -96,7 +96,7 @@ function Whole() {
       <ToastMsg data={{msg,setMsgHere}}/>
       <ModalPopup data={{show,settingShow}} />
       <Routes>
-        <Route path={'/'} element={<Front  data={{searchedProducts,Products,newObj,settingShow,setNewobj}} />} />
+        <Route path={'/esite'} element={<Front  data={{searchedProducts,Products,newObj,settingShow,setNewobj}} />} />
         <Route path={'/buyPage/:id'} element={<BuyPage  data={{Products,activeUser,settingCart,setOrders,setMsgHere,cartProducts}}/>}  /> 
         <Route path={'/login'} element={<Login data={{users ,settingActiveuser,setMsgHere,msg}} />} />
         <Route path={'/signup'} element={<Register data={{users,settingUsers,setMsgHere,msg}} />} />
